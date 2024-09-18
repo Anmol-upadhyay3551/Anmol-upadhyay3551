@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <title> document </title>
+
+    <style>
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        
+        }
+          .father{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          }
+
+          .son{
+            background-color: aqua;
+            padding: 30px;
+            border: 2px solid rgb(78, 78, 153)
+            border-radius: 10px;          }
+          )
+          label{
+            color: white;
+          }
+          input{
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 5px;
+          }
+          h1{
+            margin-bottom:20px;
+          }
+          h1,h2{
+            text-align: center;
+            color: white;
+          }
+    </style>
+        
+        <body>
+            <div class ="father">
+                <div class="son">
+                    <h1>calculate percentage</h1>
+                   <label for=""> enter total marks:</label><br> <input type="text" placeholder="number" id="no1"><br>
+                   <label for=""> total no. of subjects:</label><br><input type="text" placeholder="number" id="no2"> <br>
+                <h2> <input type="submit" value="percentage" onclick="calc()"> <br> </button></h2>
+                 <h2 id="res"> Result</h2>
+                </div>
+            </div>
+            <script>
+                function calc() {
+                    var a= parseInt(document.getElementById("no1").value);
+                    var b= parseInt(document.getElementById("no2").value);
+                    var c= a/b;
+                    document.getElementById("res").innerHTML="Result="+c;
+                }
+            </script>
+        </body>
+</html>
